@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+:root {
+    --mainPink: #ef7998;
+    --mainYellow: rgb(249,228,148);
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --yellowTrans: rgba(249.228,148,0.5);
+    --mainGrey: rgb(238,238,238);
+    --mainPurple: purple;
+    --mainSeagreen: #43cd80;
+}
+body {
+    font-family: "Kaushan Script",cursive;
+    background: var(--mainWhite);
+    color: var(--mainBlack);
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.toggler-icon {
+    font-size: 2.5rem;
+    color: var(--mainPink);
+}
+.nav-link {
+    color: var(--mainPink);
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+}
+.nav-link:hover{
+    color: var(--mainBlack);
+}
+/* end of nav links*/
+
+/* banner */
+
+.max-height {
+    min-height: calc(100vh - 76px);
+    background:url('./images/car-store2.jpg') center/cover fixed no-repeat;
+    position: relative;
+}
+.banner {
+    color: var(--mainPink);
+    margin-top: 4rem;
+}
+.banner-title {
+    color: var(--mainSeagreen);
+    font-size: 5rem;
+
+}
+
+
+/* cart buttons */
+.btn-pink {
+    color: var(--mainPink) !important;
+    border-color: var(--mainPink) !important;
+}
+.btn-black {
+    color: var(--mainBlack) !important;
+    border-color: var(--mainBlack) !important;
+}
+.btn-pink:hover {
+background: var(--mainPink) !important;
+color: var(--mainBlack) !important;
+}
+.btn-black:hover {
+    background: var(--mainPink) !important;
+    color: var(--mainBlack) !important;
+    }
+    /* end of cart buttons */
+    /*about*/
+    .about-img_container {
+        position: relative;
+    }
+    .about-img_container::before {
+        content: " ";
+        position: absolute;
+        top: -1.5rem;
+        left: -1.7rem;
+        width: 100%;
+        height: 100%;
+        outline: 0.5rem solid var(--mainPurple);
+        z-index: -1;
+        transition: all 1s ease-in-out;
+    }
+    .about-img_container:hover:before{
+        top: 0;
+        left: 0;
+    }
+    /* end of about*/
+    /*store*/
+    .store {
+        background: var(--mainGrey);
+    }
+    .img-container {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .store-image{
+        transition: all 1s ease-in-out;
+    }
+    .img-container:hover .store-img{
+        transform: scale(1.2);
+    }
+    .store-item-icon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0.75rem;
+        background: var(--mainPink);
+        border-top-left-radius: 1rem;
+        transition: all 1s ease-in-out;
+        transform: translate(100%, 100%);
+    }
+    .img-container:hover .store-item-icon {
+        transform: translate(0, 0);
+    }
+    .store-item-icon:hover{
+        color: var(--mainWhite);
+    }
+    .store-item-value {
+        color: var(--mainPurple);
+        font-size: 1rem;
+    }
+    .search-box {
+        background: var(--mainPink);
+        color: var(--mainBlack);
+    }
+    #footer {
+        font-family: 'Courier New', Courier, monospace;
+        background: var(--mainPurple);
+        color: var(--mainWhite)
+    }
+    #footer ul{
+        list-style-type: none;
+    }
+    #footer ul li{
+        font-size: 20px;
+        padding: 10px 3px;
+    }
+    #footer ul li:hover{
+        margin-left: 6px;
+        color: var(--mainYellow);
+    }
+    .footer-head {
+        text-decoration: underline;
+        font-size: 24px;
+    }
+    
+   
